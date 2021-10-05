@@ -55,7 +55,9 @@ class Path():
         self.RENDERED = False
 
     def renderData(self):
-        return {"raw_point_list":self.raw_point_list}
+        self.grain_path = r"I:\TRS Project 2\BodyBrush\brush_profile\grain.jpg"
+        self.shape_path = r"I:\TRS Project 2\BodyBrush\brush_profile\shape.jpg"
+        return {"raw_point_list":self.raw_point_list, "brush_shape":self.shape_path, "brush_grain":self.grain_path}
 
 
 #===============================================================================================================================
