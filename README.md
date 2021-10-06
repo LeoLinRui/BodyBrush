@@ -12,4 +12,5 @@
 The brush strokes are managed by the Path class. The Path class is designed to suppoert brush shape, brush grain, jitter, smoothing, variable scale, color, vector calculation for shape rotations, temporal decay, etc. The data is stored as a vector-like path that can be rendered with different resolutions. Note that not all of the functions are currently implemented.
 
 The following sampe of a brush stroke demonstrate the capability of what has been implemented:
-<img src="https://user-images.githubusercontent.com/44302577/136150395-771a3852-a415-4417-94c0-d288e1bdcac4.png" alt="drawing" width="200"/>
+
+<img src="https://user-images.githubusercontent.com/44302577/136150395-771a3852-a415-4417-94c0-d288e1bdcac4.png" alt="drawing" width="400"/>
