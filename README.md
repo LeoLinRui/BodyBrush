@@ -20,6 +20,7 @@ The following sampe of a brush stroke demonstrate the capability of what has bee
 As of now, synchronous inference and rendering will run at about 1.2 s/frame. Multiprocessing of RCNN inference, Alpha blending, and path rendering is implemented so they run in parallel. Alpha blending currently takes ~900ms and rendering takes ~1100ms. Possibly due to the multiprocessing and IPC overhead, this could not be accelerated any further.
 
 A sample recording of real-time inference can be found in the repo.
+https://user-images.githubusercontent.com/44302577/136153660-60917abf-bd55-40f5-9035-ec7517ee4595.mp4
 
 ## Asynchronous Inference
 Bug as feature I guess... I couldn't figure out how to make my code run any faster but I need something for the crit. Maybe it's time to learn c++.
