@@ -2,7 +2,7 @@
 ### For TRS Project #2
 Work in progress...
 
-## Program Structure
+## Project File Structure
 - **main.py:** main script for synchronous processing. Initialize all sub-processes: 1 inference subprocess and 8 renderer worker processes. 3 queues are used for inter-process communication.
 - **async.py:** a copy of main designed for asynchronous processing of a given video footage.
 - **model.py:** inference module. Captures video from webcam, run inference on Keypoint RCNN, and put result into a queue while maintaining the queue. An async version of the function is also available in the file.
