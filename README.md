@@ -38,11 +38,11 @@ Bug as feature I guess... I couldn't figure out how to make my code run any fast
 
 A few sample of async output can also be found using the links below:
 
-https://user-images.githubusercontent.com/44302577/136247779-71fafc9b-3dd1-4659-aded-371252e83825.mp4
+https://user-images.githubusercontent.com/44302577/136251596-fba97545-672c-4bbd-b5bb-f8609dd0358b.mp4
 
 https://user-images.githubusercontent.com/44302577/136250904-414a9b12-a86c-429e-a7f8-3c3fb9199810.mp4
 
-
+https://user-images.githubusercontent.com/44302577/136252573-cba85d0c-8c61-485b-9b1d-4261292ada3e.mp4
 
 ## Inspiration & Sources
 Besides the various artists we viewed in class for this project, there are some other artists whose work inspired and informed this project.
