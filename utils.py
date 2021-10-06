@@ -1,25 +1,13 @@
-import os
-import io
-import time
 import math
-import pandas as pd
 import numpy as np
-import multiprocessing
 
 import cv2
-from skimage import transform
 import matplotlib.pyplot as plt
 from PIL import Image
 
 import torch
-from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms
-import torchvision
-from torch import nn, optim
 from torch.autograd import Variable
-from torch.nn import functional
-
-device = 'cuda:0'
 
 
 #====================================================================================================
@@ -56,6 +44,7 @@ def show_gray(img): # Display grayscale tensor image
     '''
     
 def predict(model, img):
+    device = 'cuda:0'
     im = to_tensor(img).cuda()
     im = to_variable(im.unsqueeze(0), False)
     #im = im.cuda()
@@ -83,8 +72,8 @@ def img2points(img, model):
 
     predictions = predict(model, img)
 
-    threshold = 0.93 # 0.93
-    kpt_score_threshold = 5 # 5
+    threshold = 0.90 # 0.93
+    kpt_score_threshold = 4 # 5
 
     patches = []
     idx = 0
@@ -118,6 +107,12 @@ def img2points(img, model):
 #====================================================================================================
 # renderer process helper functions
 #====================================================================================================  
+
+def centerCrop(img, size):
+    center = np.array(img.shape) / 2
+    x = center[1] - size/2
+    y = center[0] - size/2
+    return img[int(y):int(y+size), int(x):int(x+size)]
 
 
 def alphaBlend(top, bottom):
