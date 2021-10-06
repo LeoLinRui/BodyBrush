@@ -11,7 +11,7 @@ Work in progress...
 - **sketch.ipynb:** A jupyter notebook used for sketching.
 
 ## Digital Brush Design
-The brush strokes are managed by the Path class. The Path class is designed to suppoert brush shape, brush grain, jitter, smoothing, variable scale, color, vector calculation for shape rotations, temporal decay, etc. The data is stored as a vector-like path that can be rendered with different resolutions. Note that not all of the functions are currently implemented.
+The brush strokes are managed by the Path class. The Path class is designed to suppoert brush shape, brush grain, jitter, smoothing, variable scale, variable color, taper, vector calculation for shape rotations, temporal decay, etc. The data is stored as a vector-like path that can be rendered with different resolutions. Note that not all of the functions are currently implemented.
 
 The following sampe of a brush stroke demonstrate the capability of what has been implemented:
 <p align="center">
@@ -38,3 +38,13 @@ Bug as feature I guess... I couldn't figure out how to make my code run any fast
 A sample os async output can also be found using the link below:
 
 https://user-images.githubusercontent.com/44302577/136154225-0ee2b2d9-049e-4f45-959b-b344e42a6fd3.mp4
+
+## Inspiration & Sources
+Besides the various artists we viewed in class for this project, there are some other artists whose work inspired and informed this project.
+Some technical reference material are also linked here.
+
+### Hiroshi Sugimoto's Theatre
+<p align="center">
+<img src="https://user-images.githubusercontent.com/44302577/136246526-6ad4edf5-c1bf-4f6f-b11a-5ff2c61cf6fd.jpg" alt="drawing" width="600"/>
+</p>
+
