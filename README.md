@@ -1,5 +1,6 @@
 # BodyBrush
-#### For TRS Project #2
+### For TRS Project #2
+Work in progress...
 
 ## Program Structure
 - main.py: main script for synchronous processing. Initialize all sub-processes: 1 inference subprocess and 8 renderer worker processes. 3 queues are used for inter-process communication.
@@ -16,13 +17,19 @@ The following sampe of a brush stroke demonstrate the capability of what has bee
 <img src="https://user-images.githubusercontent.com/44302577/136150395-771a3852-a415-4417-94c0-d288e1bdcac4.png" alt="drawing" width="600"/>
 </p>
 
+## Human Keypoint Detection
+KeypointRCNN is used to detect the location of 17 keypoints, which are used to create the brushstrokes.
+
 ## Synchronous Inference
 As of now, synchronous inference and rendering will run at about 1.2 s/frame. Multiprocessing of RCNN inference, Alpha blending, and path rendering is implemented so they run in parallel. Alpha blending currently takes ~900ms and rendering takes ~1100ms. Possibly due to the multiprocessing and IPC overhead, this could not be accelerated any further.
 
 A sample recording of real-time inference can be found in the repo.
+
 https://user-images.githubusercontent.com/44302577/136153660-60917abf-bd55-40f5-9035-ec7517ee4595.mp4
 
 ## Asynchronous Inference
 Bug as feature I guess... I couldn't figure out how to make my code run any faster but I need something for the crit. Maybe it's time to learn c++.
 
 A sample os async output can also be found in the repo.
+
+https://user-images.githubusercontent.com/44302577/136154225-0ee2b2d9-049e-4f45-959b-b344e42a6fd3.mp4
