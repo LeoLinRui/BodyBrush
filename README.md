@@ -36,9 +36,13 @@ https://user-images.githubusercontent.com/44302577/136153660-60917abf-bd55-40f5-
 ## Asynchronous Inference
 Bug as feature I guess... I couldn't figure out how to make my code run any faster but I need something presentable for the crit. Maybe it's time to learn c.
 
-A sample os async output can also be found using the link below:
+A few sample of async output can also be found using the links below:
 
 https://user-images.githubusercontent.com/44302577/136247779-71fafc9b-3dd1-4659-aded-371252e83825.mp4
+
+https://user-images.githubusercontent.com/44302577/136250904-414a9b12-a86c-429e-a7f8-3c3fb9199810.mp4
+
+
 
 ## Inspiration & Sources
 Besides the various artists we viewed in class for this project, there are some other artists whose work inspired and informed this project.
