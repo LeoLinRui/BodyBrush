@@ -33,7 +33,7 @@ A sample recording of real-time inference can be found using the link below:
 https://user-images.githubusercontent.com/44302577/136153660-60917abf-bd55-40f5-9035-ec7517ee4595.mp4
 
 ## Asynchronous Inference
-Bug as feature I guess... I couldn't figure out how to make my code run any faster but I need something for the crit. Maybe it's time to learn c++.
+Bug as feature I guess... I couldn't figure out how to make my code run any faster but I need something presentable for the crit. Maybe it's time to learn c.
 
 A sample os async output can also be found using the link below:
 
@@ -48,3 +48,4 @@ Some technical reference material are also linked here.
 <img src="https://user-images.githubusercontent.com/44302577/136246526-6ad4edf5-c1bf-4f6f-b11a-5ff2c61cf6fd.jpg" alt="drawing" width="600"/>
 </p>
 
+### The Fence
