@@ -37,7 +37,7 @@ Bug as feature I guess... I couldn't figure out how to make my code run any fast
 
 A sample os async output can also be found using the link below:
 
-https://user-images.githubusercontent.com/44302577/136154225-0ee2b2d9-049e-4f45-959b-b344e42a6fd3.mp4
+https://user-images.githubusercontent.com/44302577/136247719-8e4a028f-7159-4996-bde1-cfa1e26bd611.mp4
 
 ## Inspiration & Sources
 Besides the various artists we viewed in class for this project, there are some other artists whose work inspired and informed this project.
