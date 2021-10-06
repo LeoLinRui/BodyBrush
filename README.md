@@ -1,2 +1,27 @@
 # BodyBrush
- For TRS Project #2
+#### For TRS Project #2
+
+## Program Structure
+- main.py: main script for synchronous processing. Initialize all sub-processes: 1 inference subprocess and 8 renderer worker processes. 3 queues are used for inter-process communication.
+- async.py: a copy of main designed for asynchronous processing of a given video footage.
+- model.py: inference module. Captures video from webcam, run inference on Keypoint RCNN, and put result into a queue while maintaining the queue. An async version of the function is also available in the file.
+- modules.py: contains all the class definitions for: the Path class, the PathManager class, and the renderer method.
+- utils.py: contains the helper functions used for inference, rendering, processing, debugging, etc.
+
+## Digital Brush Design
+The brush strokes are managed by the Path class. The Path class is designed to suppoert brush shape, brush grain, jitter, smoothing, variable scale, color, vector calculation for shape rotations, temporal decay, etc. The data is stored as a vector-like path that can be rendered with different resolutions. Note that not all of the functions are currently implemented.
+
+The following sampe of a brush stroke demonstrate the capability of what has been implemented:
+<p align="center">
+<img src="https://user-images.githubusercontent.com/44302577/136150395-771a3852-a415-4417-94c0-d288e1bdcac4.png" alt="drawing" width="600"/>
+</p>
+
+## Synchronous Inference
+As of now, synchronous inference and rendering will run at about 1.2 s/frame. Multiprocessing of RCNN inference, Alpha blending, and path rendering is implemented so they run in parallel. Alpha blending currently takes ~900ms and rendering takes ~1100ms. Possibly due to the multiprocessing and IPC overhead, this could not be accelerated any further.
+
+A sample recording of real-time inference can be found in the repo.
+
+## Asynchronous Inference
+Bug as feature I guess... I couldn't figure out how to make my code run any faster but I need something for the crit. Maybe it's time to learn c++.
+
+A sample os async output can also be found in the repo.
